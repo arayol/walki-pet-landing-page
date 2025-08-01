@@ -31,7 +31,7 @@ export const ValuePropositionSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {benefits.map((benefit, index) => <Card key={index} className="p-8 text-center bg-section-yellow border-border/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+          {benefits.map((benefit, index) => <Card key={index} className="p-8 text-center bg-section-yellow border-border/20">
               <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <benefit.icon className="w-10 h-10 text-primary-foreground" />
               </div>
@@ -59,9 +59,9 @@ export const ValuePropositionSection = () => {
             <p className="text-muted-foreground mb-6">
               Sem cartão de crédito • Cancelamento a qualquer momento
             </p>
-            <Button size="lg" variant="default" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold">
-              Ver Planos e Começar Grátis
-            </Button>
+             <Button size="lg" variant="default" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold" asChild>
+               <a href="#pricing">Ver Planos e Começar Grátis</a>
+             </Button>
           </div>
         </div>
       </div>

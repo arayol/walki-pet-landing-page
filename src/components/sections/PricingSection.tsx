@@ -25,7 +25,7 @@ export const PricingSection = () => {
     buttonText: "Começar Prático",
     colorScheme: "pro" as const
   }];
-  return <section className="py-20 bg-pricing-gradient">
+  return <section id="pricing" className="py-20 bg-pricing-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-50 lg:text-5xl">
