@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Walki Pet Design System - Inspired by dog walker illustration colors
 All colors MUST be HSL.
 */
 
@@ -17,26 +17,43 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Dog walker inspired purple-blue primary */
+    --primary: 259 47% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 259 35% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm orange from dog walker's outfit */
+    --secondary: 33 85% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
+    /* Soft purple background tones */
+    --muted: 259 15% 95%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Bright accent from illustration */
+    --accent: 190 85% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 259 15% 90%;
+    --input: 259 15% 92%;
+    --ring: 259 47% 35%;
 
-    --radius: 0.5rem;
+    /* Purple gradient backgrounds */
+    --gradient-hero: linear-gradient(135deg, hsl(259 60% 70%), hsl(280 50% 80%));
+    --gradient-section: linear-gradient(180deg, hsl(259 30% 95%), hsl(280 20% 98%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(259 15% 98%));
+    
+    /* Dog walker inspired colors */
+    --walker-blue: 200 85% 45%;
+    --walker-orange: 33 85% 60%;
+    --walker-purple: 259 60% 70%;
+    --dog-brown: 25 45% 55%;
+    --success-green: 142 76% 36%;
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
