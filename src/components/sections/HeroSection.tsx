@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 export const HeroSection = () => {
-  return <section className="h-[80vh] relative overflow-hidden pt-16" style={{
-    backgroundImage: `url('/lovable-uploads/4a2fa95c-1d6a-428b-8cd2-079ec0fd783d.png')`,
+  return <section className="h-[70vh] relative overflow-hidden pt-16" style={{
+    backgroundImage: `url('/lovable-uploads/742b75d3-a96d-42e3-a0f0-8bd0dce1b6ee.png')`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center center',
+    backgroundPosition: 'center top',
     backgroundRepeat: 'no-repeat'
   }}>
       {/* Overlay para melhor legibilidade */}
@@ -16,8 +16,7 @@ export const HeroSection = () => {
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-slate-700">
                 Transforme sua Paixão por Pets em
-                
-                por Pets em
+                <br />
                 <span className="text-walker-orange">Negócio Lucrativo</span>
               </h1>
               
