@@ -2,15 +2,15 @@ import { PricingCard } from "@/components/ui/pricing-card";
 export const PricingSection = () => {
   const plans = [{
     title: "Gratuito",
-    description: "Ajudar primeiras grainhas com um uniguao",
-    price: "R$ 29",
+    description: "Até 5 clientes ativos ou 30 dias",
+    price: "R$ 0",
     period: "/mês",
     features: ["Organizar passeios", "Sistema automatizado suas rottas graninha", "Agenda inteligente", "6 menuitez seus primos", "Notificações automáticas"],
     buttonText: "Ver como Funciona",
     colorScheme: "free" as const
   }, {
     title: "Básico",
-    description: "Mantenha histeria de seu crianciad recobranças",
+    description: "Para dog walkers em crescimento",
     price: "R$ 59",
     period: "/mês",
     features: ["Agendamento Inteligente", "Mantenha histórico com crianciad", "Marketing seus retificada", "Receba automatico", "Histórico de passeios"],
@@ -18,7 +18,7 @@ export const PricingSection = () => {
     colorScheme: "basic" as const
   }, {
     title: "Profissional",
-    description: "Para expansão e alteração do crescimento",
+    description: "Para automatização completa",
     price: "R$ 59",
     period: "/mês",
     features: ["Até 50 clientes", "Regiões ilimitadas", "Campanha de conquista", "PIX automático", "Cartão integrado"],
