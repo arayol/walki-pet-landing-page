@@ -26,12 +26,6 @@ export const HeroSection = () => {
                 Para quem quer transformar o amor por animais em uma carreira organizada, 
                 lucrativa e profissional.
               </p>
-              
-              <p className="text-lg text-white/80 leading-relaxed max-w-lg">
-                Com ferramentas inteligentes de agendamento, gestão de clientes, 
-                pagamentos e marketing, você ganha tempo, mais clientes e 
-                previsibilidade financeira.
-              </p>
             </div>
             
             <div className="space-y-4">
