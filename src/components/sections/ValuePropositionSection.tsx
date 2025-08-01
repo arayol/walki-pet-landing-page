@@ -39,7 +39,7 @@ export const ValuePropositionSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="p-8 text-center bg-gradient-card border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+            <Card key={index} className="p-8 text-center bg-section-yellow border-border/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
               <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <benefit.icon className="w-10 h-10 text-primary-foreground" />
               </div>
@@ -58,7 +58,7 @@ export const ValuePropositionSection = () => {
         </div>
 
         <div className="text-center space-y-8">
-          <div className="bg-gradient-section rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="bg-section-yellow rounded-2xl p-8 max-w-4xl mx-auto border border-border/20">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Shield className="w-6 h-6 text-success" />
               <span className="text-xl font-bold text-foreground">
@@ -68,7 +68,7 @@ export const ValuePropositionSection = () => {
             <p className="text-muted-foreground mb-6">
               Sem cartão de crédito • Cancelamento a qualquer momento
             </p>
-            <Button size="lg" variant="accent" className="text-lg px-8 py-4">
+            <Button size="lg" variant="default" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold">
               Ver Planos e Começar Grátis
             </Button>
           </div>
