@@ -5,7 +5,7 @@ export const HeroSection = () => {
     <section 
       className="min-h-screen relative overflow-hidden pt-16"
       style={{
-        backgroundImage: `url('/lovable-uploads/c5990aad-9f8c-4934-8957-0cc37033f5d9.png')`,
+        backgroundImage: `url('/lovable-uploads/86362fc9-85cc-4e81-95eb-bcb0014f912e.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
