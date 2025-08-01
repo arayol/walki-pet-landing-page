@@ -46,8 +46,13 @@ All colors MUST be HSL.
     --gradient-section: linear-gradient(180deg, hsl(259 30% 95%), hsl(280 20% 98%));
     --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(259 15% 98%));
     
-    /* New peach/beige section background - #fde8dc */
-    --section-yellow: 25 85% 93%;
+    /* Pricing card colors */
+    --pricing-free: 330 15% 95%;
+    --pricing-free-accent: 330 45% 75%;
+    --pricing-basic: 195 25% 95%;
+    --pricing-basic-accent: 195 65% 55%;
+    --pricing-pro: 280 25% 95%;
+    --pricing-pro-accent: 280 65% 55%;
     
     /* Dog walker inspired colors */
     --walker-blue: 200 85% 45%;

@@ -9,8 +9,7 @@ interface PricingCardProps {
   period: string;
   features: string[];
   buttonText: string;
-  isPopular?: boolean;
-  buttonVariant?: "default" | "secondary" | "outline";
+  colorScheme: 'free' | 'basic' | 'pro';
 }
 
 export const PricingCard = ({
@@ -20,44 +19,54 @@ export const PricingCard = ({
   period,
   features,
   buttonText,
-  isPopular = false,
-  buttonVariant = "default"
+  colorScheme
 }: PricingCardProps) => {
+  const colorClasses = {
+    free: {
+      bg: 'bg-pricing-free',
+      button: 'bg-pricing-free-accent hover:bg-pricing-free-accent/90',
+      text: 'text-pricing-free-accent'
+    },
+    basic: {
+      bg: 'bg-pricing-basic',
+      button: 'bg-pricing-basic-accent hover:bg-pricing-basic-accent/90',
+      text: 'text-pricing-basic-accent'
+    },
+    pro: {
+      bg: 'bg-pricing-pro',
+      button: 'bg-pricing-pro-accent hover:bg-pricing-pro-accent/90',
+      text: 'text-pricing-pro-accent'
+    }
+  };
+
+  const colors = colorClasses[colorScheme];
+
   return (
-    <Card className={`relative p-8 ${isPopular ? 'border-accent shadow-lg scale-105' : 'border-border/50'} transition-all duration-300 hover:shadow-lg bg-gradient-card`}>
-      {isPopular && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <div className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold">
-            Mais Popular
-          </div>
-        </div>
-      )}
-      
+    <Card className={`${colors.bg} p-8 rounded-2xl border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}>
       <div className="text-center space-y-6">
         <div>
-          <h3 className="text-2xl font-bold text-foreground">{title}</h3>
-          <p className="text-muted-foreground mt-2">{description}</p>
+          <h3 className="text-2xl font-bold text-foreground mb-2">{title}</h3>
+          <p className="text-muted-foreground text-sm">{description}</p>
         </div>
         
         <div className="space-y-2">
           <div className="flex items-baseline justify-center gap-1">
             <span className="text-4xl font-bold text-foreground">{price}</span>
-            <span className="text-muted-foreground">{period}</span>
+            <span className="text-muted-foreground text-sm">{period}</span>
           </div>
         </div>
         
         <Button 
           size="lg" 
-          className="w-full" 
-          variant={buttonVariant}
+          className={`w-full text-white font-semibold ${colors.button}`}
         >
           {buttonText}
         </Button>
         
-        <div className="space-y-4 text-left">
+        <div className="space-y-3 text-left">
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-3">
-              <Check className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
+              <Check className={`w-5 h-5 ${colors.text} flex-shrink-0 mt-0.5`} />
               <span className="text-sm text-muted-foreground">{feature}</span>
             </div>
           ))}

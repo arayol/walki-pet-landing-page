@@ -9,17 +9,17 @@ export const PricingSection = () => {
       period: "/mês",
       features: [
         "Organizar passeios",
-        "Sistema automatizado de passeios",
+        "Sistema automatizado suas rottas graninha",
         "Agenda inteligente",
         "6 menuitez seus primos",
         "Notificações automáticas"
       ],
       buttonText: "Ver como Funciona",
-      buttonVariant: "outline" as const
+      colorScheme: "free" as const
     },
     {
       title: "Básico",
-      description: "Mantenha histeria de seu crianciad recobrancas",
+      description: "Mantenha histeria de seu crianciad recobranças",
       price: "R$ 59",
       period: "/mês",
       features: [
@@ -29,9 +29,8 @@ export const PricingSection = () => {
         "Receba automatico",
         "Histórico de passeios"
       ],
-      buttonText: "Reologia e aggravas",
-      isPopular: true,
-      buttonVariant: "default" as const
+      buttonText: "Começar Prático",
+      colorScheme: "basic" as const
     },
     {
       title: "Profissional",
@@ -45,8 +44,8 @@ export const PricingSection = () => {
         "PIX automático",
         "Cartão integrado"
       ],
-      buttonText: "Comprar Prático",
-      buttonVariant: "secondary" as const
+      buttonText: "Começar Prático",
+      colorScheme: "pro" as const
     }
   ];
 
@@ -73,8 +72,7 @@ export const PricingSection = () => {
               period={plan.period}
               features={plan.features}
               buttonText={plan.buttonText}
-              isPopular={plan.isPopular}
-              buttonVariant={plan.buttonVariant}
+              colorScheme={plan.colorScheme}
             />
           ))}
         </div>

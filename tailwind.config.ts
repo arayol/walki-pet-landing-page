@@ -63,6 +63,14 @@ export default {
 				},
 				success: 'hsl(var(--success-green))',
 				'section-yellow': 'hsl(var(--section-yellow))',
+				pricing: {
+					free: 'hsl(var(--pricing-free))',
+					'free-accent': 'hsl(var(--pricing-free-accent))',
+					basic: 'hsl(var(--pricing-basic))',
+					'basic-accent': 'hsl(var(--pricing-basic-accent))',
+					pro: 'hsl(var(--pricing-pro))',
+					'pro-accent': 'hsl(var(--pricing-pro-accent))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
