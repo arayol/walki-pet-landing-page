@@ -62,6 +62,7 @@ export default {
 					brown: 'hsl(var(--dog-brown))'
 				},
 				success: 'hsl(var(--success-green))',
+				'section-yellow': 'hsl(var(--section-yellow))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
