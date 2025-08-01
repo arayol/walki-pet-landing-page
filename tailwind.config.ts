@@ -87,6 +87,7 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-section': 'var(--gradient-section)',
 				'gradient-card': 'var(--gradient-card)',
+				'pricing-gradient': 'var(--pricing-gradient)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
