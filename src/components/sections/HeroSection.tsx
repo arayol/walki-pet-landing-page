@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 export const HeroSection = () => {
   return <section className="h-[70vh] relative overflow-hidden pt-16" style={{
     backgroundImage: `url('/lovable-uploads/742b75d3-a96d-42e3-a0f0-8bd0dce1b6ee.png')`,
-    backgroundSize: 'contain',
-    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center top',
     backgroundRepeat: 'no-repeat'
   }}>
       {/* Overlay para melhor legibilidade */}
