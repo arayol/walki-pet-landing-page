@@ -1,7 +1,24 @@
 export const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-16">
-      <div className="container mx-auto px-4">
+    <footer className="relative bg-slate-900 text-white py-16">
+      {/* Decorative circles pattern */}
+      <div className="absolute top-0 left-0 right-0 h-16 -mt-8 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900"></div>
+        <div className="grid grid-cols-12 gap-2 h-full opacity-20">
+          {Array.from({ length: 96 }).map((_, i) => (
+            <div 
+              key={i} 
+              className="w-2 h-2 bg-white rounded-full"
+              style={{
+                animationDelay: `${i * 0.1}s`,
+                opacity: Math.random() * 0.5 + 0.2
+              }}
+            />
+          ))}
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-4">
