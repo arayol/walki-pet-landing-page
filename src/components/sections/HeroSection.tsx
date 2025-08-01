@@ -17,7 +17,9 @@ export const HeroSection = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-slate-700">
                 Transforme sua Paixão
                 <br />
-                por Pets em <span className="text-walker-orange">Negócio Lucrativo</span>
+                por Pets em
+                <br />
+                <span className="text-walker-orange">Negócio Lucrativo</span>
               </h1>
               
               <p className="text-xl text-white/90 leading-relaxed max-w-lg">
