@@ -1,21 +1,16 @@
 import { Button } from "@/components/ui/button";
-
 export const HeroSection = () => {
-  return (
-    <section 
-      className="min-h-screen relative overflow-hidden pt-16"
-      style={{
-        backgroundImage: `url('/lovable-uploads/742b75d3-a96d-42e3-a0f0-8bd0dce1b6ee.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+  return <section className="min-h-screen relative overflow-hidden pt-16" style={{
+    backgroundImage: `url('/lovable-uploads/742b75d3-a96d-42e3-a0f0-8bd0dce1b6ee.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       {/* Overlay para melhor legibilidade */}
       <div className="absolute inset-0 bg-primary/20" />
       
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
+      <div className="container mx-auto px-4 relative z-10 py-[34px]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh] py-0">
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
@@ -38,11 +33,7 @@ export const HeroSection = () => {
             </div>
             
             <div className="space-y-4">
-              <Button 
-                size="lg" 
-                variant="hero" 
-                className="text-lg px-8 py-4 bg-primary hover:bg-primary/90"
-              >
+              <Button size="lg" variant="hero" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90">
                 CRIAR CONTA GRÁTIS
               </Button>
             </div>
@@ -54,6 +45,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

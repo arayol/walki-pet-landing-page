@@ -1,31 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, DollarSign, TrendingUp, Shield } from "lucide-react";
-
 export const ValuePropositionSection = () => {
-  const benefits = [
-    {
-      icon: Calendar,
-      title: "Organizar passeios",
-      subtitle: "com agenda inteligente",
-      description: "Sistema automatizado que otimiza horários e maximiza ganhos"
-    },
-    {
-      icon: DollarSign,
-      title: "Gerenciar clientes",
-      subtitle: "e receber pagamentos",
-      description: "Tudo integrado em uma só plataforma, sem complicação"
-    },
-    {
-      icon: TrendingUp,
-      title: "Atrair mais pets",
-      subtitle: "sem complicação",
-      description: "Marketing automático e perfil profissional otimizado"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-section-yellow">
+  const benefits = [{
+    icon: Calendar,
+    title: "Organizar passeios",
+    subtitle: "com agenda inteligente",
+    description: "Sistema automatizado que otimiza horários e maximiza ganhos"
+  }, {
+    icon: DollarSign,
+    title: "Gerenciar clientes",
+    subtitle: "e receber pagamentos",
+    description: "Tudo integrado em uma só plataforma, sem complicação"
+  }, {
+    icon: TrendingUp,
+    title: "Atrair mais pets",
+    subtitle: "sem complicação",
+    description: "Marketing automático e perfil profissional otimizado"
+  }];
+  return <section className="bg-section-yellow py-[93px]">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
@@ -38,8 +31,7 @@ export const ValuePropositionSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className="p-8 text-center bg-section-yellow border-border/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+          {benefits.map((benefit, index) => <Card key={index} className="p-8 text-center bg-section-yellow border-border/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
               <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <benefit.icon className="w-10 h-10 text-primary-foreground" />
               </div>
@@ -53,8 +45,7 @@ export const ValuePropositionSection = () => {
               <p className="text-muted-foreground leading-relaxed">
                 {benefit.description}
               </p>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         <div className="text-center space-y-8">
@@ -74,6 +65,5 @@ export const ValuePropositionSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
