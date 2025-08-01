@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 export const HeroSection = () => {
   return <section className="min-h-screen relative overflow-hidden pt-16" style={{
     backgroundImage: `url('/lovable-uploads/742b75d3-a96d-42e3-a0f0-8bd0dce1b6ee.png')`,
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
   }}>
@@ -14,18 +14,18 @@ export const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 plataforma para{" "}
                 <br />
                 <span className="text-walker-orange">DogWalker</span>
               </h1>
               
-              <p className="text-lg text-white/90 leading-relaxed max-w-lg">
+              <p className="text-xl text-white/90 leading-relaxed max-w-lg">
                 Para quem quer transformar o amor por animais em uma carreira organizada, 
                 lucrativa e profissional.
               </p>
               
-              <p className="text-base text-white/80 leading-relaxed max-w-lg">
+              <p className="text-lg text-white/80 leading-relaxed max-w-lg">
                 Com ferramentas inteligentes de agendamento, gestão de clientes, 
                 pagamentos e marketing, você ganha tempo, mais clientes e 
                 previsibilidade financeira.
