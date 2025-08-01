@@ -18,7 +18,7 @@ export const HeroSection = () => {
                 Transforme sua Paixão
                 
                 por Pets em
-                <br />
+               
                 <span className="text-walker-orange">Negócio Lucrativo</span>
               </h1>
               
