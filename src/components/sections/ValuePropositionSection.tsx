@@ -31,7 +31,7 @@ export const ValuePropositionSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-           {benefits.map((benefit, index) => <Card key={index} className="p-8 text-center bg-section-yellow border-border/20">
+           {benefits.map((benefit, index) => <Card key={index} className="p-8 text-center bg-section-yellow">
               <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <benefit.icon className="w-10 h-10 text-primary-foreground" />
               </div>
