@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
               <img src="/lovable-uploads/d5969dc8-9ba1-4e75-9858-fe10deda03de.png" alt="Walki Pet" className="w-full h-full object-contain" />
             </div>
             <span className="text-xl font-bold text-white">WALKI PET</span>

@@ -6,7 +6,7 @@ export const Footer = () => {
           {/* Logo e Descrição */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
                 <img src="/lovable-uploads/d5969dc8-9ba1-4e75-9858-fe10deda03de.png" alt="Walki Pet" className="w-full h-full object-contain" />
               </div>
               <span className="text-xl font-bold">Walki Pet</span>
