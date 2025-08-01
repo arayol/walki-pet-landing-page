@@ -14,7 +14,7 @@ export const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-slate-700">
                 plataforma para{" "}
                 <br />
                 <span className="text-walker-orange">DogWalker</span>
