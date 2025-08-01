@@ -14,10 +14,8 @@ export const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-slate-700 px-0 mx-[8px]">
-                Transforme sua Paixão por Pets em
-                <br />
-                <span className="text-walker-orange px-0 py-0 mx-0">Negócio Lucrativo</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-slate-700 px-0 mx-[8px] max-w-4xl">
+                Transforme sua Paixão por Pets em <span className="text-walker-orange px-0 py-0 mx-0">Negócio Lucrativo</span>
               </h1>
               
               <p className="text-xl text-white/90 leading-relaxed max-w-lg">
