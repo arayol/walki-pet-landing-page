@@ -63,6 +63,7 @@ export default {
 				},
 				success: 'hsl(var(--success-green))',
 				'section-yellow': 'hsl(var(--section-yellow))',
+				'pricing-background': 'hsl(var(--pricing-background))',
 				pricing: {
 					free: 'hsl(var(--pricing-free))',
 					'free-accent': 'hsl(var(--pricing-free-accent))',
