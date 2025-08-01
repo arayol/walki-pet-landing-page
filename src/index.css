@@ -48,7 +48,7 @@ All colors MUST be HSL.
     
     /* Section backgrounds */
     --section-yellow: 25 85% 93%;
-    --pricing-gradient: linear-gradient(to top, #d497d5, #c18dc2);
+    --pricing-gradient: linear-gradient(to bottom, #b993d6, #8ca6db);
     
     /* Pricing card colors */
     --pricing-free: 330 15% 95%;
