@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ValuePropositionSection } from "@/components/sections/ValuePropositionSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
@@ -16,6 +17,7 @@ const Index = () => {
       <TestimonialSection />
       <PricingSection />
       <FAQSection />
+      <Footer />
     </main>
   );
 };
