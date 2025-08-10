@@ -1,73 +1,148 @@
-# Welcome to your Lovable project
+# Walki Pet - Dog Walking Platform
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/07e596f6-2d6a-4184-9799-dc62b3baf92f
+A comprehensive dog walking and pet care management platform connecting dog walkers with pet owners. Built with modern web technologies and deployed at **walki.pet**.
 
-## How can I edit this code?
+### Key Features
+- Client and walker dashboards
+- Service booking system
+- Stripe payment integration (Basic R$ 29, Professional R$ 59,90)
+- Real-time authentication and user management
+- Advanced analytics and reporting
+- Feature flags and A/B testing capabilities
+- Google Calendar integration
+- Automated email system
+- Production-ready deployment
 
-There are several ways of editing your application.
+## Development Environment
 
-**Use Lovable**
+This project runs on **Replit** with integrated development tools.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/07e596f6-2d6a-4184-9799-dc62b3baf92f) and start prompting.
+### Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+The application is pre-configured and ready to run:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The workflow "Start application" will automatically:
+- Start the Express.js backend server
+- Launch the Vite development server for the frontend
+- Enable hot-reload for instant development feedback
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Development Options
 
-**Use GitHub Codespaces**
+**Replit Editor (Recommended)**
+- Edit files directly in the Replit interface
+- Automatic server restart on changes
+- Integrated console and database tools
+- Real-time collaboration features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Local Development**
+If you prefer working locally:
 
-## What technologies are used for this project?
+```sh
+# Clone the repository
+git clone <YOUR_REPLIT_GIT_URL>
+
+# Navigate to project directory
+cd walki-pet-platform
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+**GitHub Integration**
+- Push changes to sync with Replit
+- Use GitHub Codespaces for cloud development
+- Automatic deployment triggers
+
+## Technology Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Frontend
+- **React 18** with TypeScript
+- **Vite** for build tooling and development
+- **TailwindCSS** for styling
+- **shadcn/ui** component library
+- **TanStack Query** for server state management
+- **React Router** for navigation
 
-## How can I deploy this project?
+### Backend
+- **Node.js** with Express.js
+- **PostgreSQL** database (Replit Database)
+- **Drizzle ORM** for database management
+- **Stripe** for payment processing
+- **Resend** for email services
 
-Simply open [Lovable](https://lovable.dev/projects/07e596f6-2d6a-4184-9799-dc62b3baf92f) and click on Share -> Publish.
+### Infrastructure
+- **Replit** hosting and development environment
+- **Custom domain**: walki.pet
+- **SSL/TLS** automatic certificate management
+- **Automated deployments**
 
-## Can I connect a custom domain to my Lovable project?
+## Database Management
 
-Yes, you can!
+The project uses Replit's integrated PostgreSQL database:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```sh
+# Push schema changes
+npm run db:push
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Generate schema types
+npm run db:generate
+```
+
+## Deployment
+
+### Production Deployment
+The application is deployed at **walki.pet** using Replit's deployment system.
+
+To deploy updates:
+1. Make your changes in the Replit editor
+2. Test locally using the development server
+3. Click the **Deploy** button in Replit
+4. Changes will be live at walki.pet
+
+### Deployment Features
+- **Autoscale**: 1vCPU/2GB RAM, scales to 2-3 machines
+- **Custom Domain**: Configured at walki.pet
+- **SSL Certificate**: Automatic via Replit
+- **Health Checks**: Automated monitoring
+- **Rollback**: Available through Replit interface
+
+## Environment Configuration
+
+Required environment variables are managed through Replit Secrets:
+- `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
+- `STRIPE_SECRET_KEY` & `VITE_STRIPE_PUBLIC_KEY`
+- `DATABASE_URL` (automatically configured)
+- `RESEND_API_KEY` for email services
+
+## Custom Domain Setup
+
+The custom domain **walki.pet** is already configured. For additional domains:
+1. Go to Replit project settings
+2. Navigate to Domains section
+3. Add your custom domain
+4. Follow DNS configuration instructions
+
+## Support & Documentation
+
+- **Replit Documentation**: [docs.replit.com](https://docs.replit.com)
+- **Project Documentation**: See `replit.md` for detailed architecture
+- **Database Guide**: Check `MIGRATION_TO_REPLIT_DB.md` for database information
+- **Deploy Guide**: Reference `HOSTINGER_DEPLOY_GUIDE.md` for production setup
+
+---
+
+**Live URL**: [walki.pet](https://walki.pet)
+**Development**: Replit integrated environment
+**Launch**: Planned for October 2025
