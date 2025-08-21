@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================
+   PETWALKER - SISTEMA DE DESIGN COMPLETO
+   ========================================== */
+
+@layer base {
+  :root {
+    /* === CORES BASE === */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* === CORES PRIMÁRIAS === */
+    --primary: 259 47% 35%;          /* Roxo do dog walker */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 259 35% 55%;
+    --primary-glow: 259 60% 70%;
+
+    /* === CORES SECUNDÁRIAS === */
+    --secondary: 33 85% 60%;         /* Laranja do dog walker */
+    --secondary-foreground: 0 0% 100%;
+
+    /* === CORES DE APOIO === */
+    --muted: 259 15% 95%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 190 85% 50%;           /* Azul vibrante */
+    --accent-foreground: 0 0% 100%;
+
+    /* === CORES DE SISTEMA === */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 36%;
+    --warning: 45 100% 60%;
+    --info: 200 85% 45%;
+
+    /* === BORDERS E INPUTS === */
+    --border: 259 15% 90%;
+    --input: 259 15% 92%;
+    --ring: 259 47% 35%;
+
+    /* === GRADIENTES === */
+    --gradient-hero: linear-gradient(135deg, hsl(259 60% 70%), hsl(280 50% 80%));
+    --gradient-section: linear-gradient(180deg, hsl(259 30% 95%), hsl(280 20% 98%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(259 15% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(259 47% 35%), hsl(259 60% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(33 85% 60%), hsl(33 100% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(190 85% 50%), hsl(200 85% 65%));
+
+    /* === CORES TEMÁTICAS (PET WALKER) === */
+    --walker-blue: 200 85% 45%;
+    --walker-orange: 33 85% 60%;
+    --walker-purple: 259 60% 70%;
+    --dog-brown: 25 45% 55%;
+    --grass-green: 120 40% 45%;
+    --sky-blue: 190 85% 50%;
+
+    /* === BACKGROUNDS DE SEÇÕES === */
+    --section-primary: 259 30% 97%;
+    --section-secondary: 33 30% 97%;
+    --section-accent: 190 30% 97%;
+    --section-neutral: 0 0% 98%;
+
+    /* === PRICING CARDS === */
+    --pricing-free: 330 15% 95%;
+    --pricing-free-accent: 330 45% 75%;
+    --pricing-basic: 195 25% 95%;
+    --pricing-basic-accent: 195 65% 55%;
+    --pricing-pro: 280 25% 95%;
+    --pricing-pro-accent: 280 65% 55%;
+
+    /* === SOMBRAS === */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+    --shadow-primary: 0 10px 30px -10px hsl(259 47% 35% / 0.3);
+    --shadow-glow: 0 0 40px hsl(259 60% 70% / 0.4);
+
+    /* === ANIMAÇÕES === */
+    --transition-fast: all 0.15s ease-out;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* === TIPOGRAFIA === */
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-heading: 'Inter', system-ui, sans-serif;
+
+    /* === ESPAÇAMENTOS === */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* === BORDER RADIUS === */
+    --radius: 1rem;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-2xl: 2rem;
+    --radius-full: 9999px;
+
+    /* === SIDEBAR === */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* === TEMA ESCURO === */
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 259 60% 70%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 33 85% 60%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 190 85% 50%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 259 60% 70%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* === TIPOGRAFIA BASE === */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  h1 { @apply text-4xl lg:text-6xl; }
+  h2 { @apply text-3xl lg:text-5xl; }
+  h3 { @apply text-2xl lg:text-4xl; }
+  h4 { @apply text-xl lg:text-3xl; }
+  h5 { @apply text-lg lg:text-2xl; }
+  h6 { @apply text-base lg:text-xl; }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  /* === UTILITÁRIOS PERSONALIZADOS === */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-secondary to-walker-orange bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .bg-gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-primary {
+    box-shadow: var(--shadow-primary);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+}
+
+/* === COMPONENTES UTILITÁRIOS === */
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold shadow-primary hover:shadow-glow transition-smooth hover:-translate-y-1;
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-smooth hover:-translate-y-1;
+  }
+
+  .card-elevated {
+    @apply bg-gradient-card border border-border/50 rounded-xl shadow-md hover:shadow-lg transition-smooth hover:-translate-y-1;
+  }
+
+  .section-container {
+    @apply container mx-auto px-4 py-16 lg:py-24;
+  }
+
+  .hero-text {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+  }
+
+  .section-title {
+    @apply text-3xl lg:text-4xl font-bold text-center mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12;
+  }
+}
